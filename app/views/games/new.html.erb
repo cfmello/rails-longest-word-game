@@ -1,0 +1,19 @@
+<div class="container">
+
+  <h1>New game</h1>
+
+  <div id="new_game">
+    <% @new_game.each do |letter| %>
+      <div id="letter"><span><%= letter %></span></div>
+    <% end %>
+  </div>
+
+  <div>
+    <form action="#" method="post">
+      <label for="word">What is the longest word you can find?</label><br>
+      <input type="text" name="word" id="word">
+      <input type="submit" value="Play">
+    </form>
+  </div>
+
+</div>
