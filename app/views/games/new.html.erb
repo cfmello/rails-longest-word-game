@@ -9,10 +9,12 @@
   </div>
 
   <div>
-    <form action="#" method="post">
+    <form action="/score" method="post">
+      <%= hidden_field_tag :letters, @new_game %>
       <label for="word">What is the longest word you can find?</label><br>
       <input type="text" name="word" id="word">
       <input type="submit" value="Play">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
     </form>
   </div>
 
